@@ -1,0 +1,30 @@
+app:
+  external:
+    btc:
+      url: https://api.coindesk.com
+spring:
+  profiles:
+    active: test
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  output:
+    ansi:
+      enabled: ALWAYS
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:localhost;DB_CLOSE_ON_EXIT=FALSE
+    username: ${DB_USERNAME:admin}
+    password: ${DB_PASSWORD:admin}
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        time_zone: ${TIME_ZONE:UTC}
+        enable_lazy_load_no_trans: true
+      org:
+        hibernate:
+          envers:
+            default_schema: public
+            store_data_at_delete: true
+  h2.console.enabled: false
