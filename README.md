@@ -27,3 +27,6 @@ Serás evaluado en base los siguientes puntos:
 - La robustez de tu aplicación
 - Buenas prácticas de proyecto
 - La documentación del código
+
+##API-DOC
+http://localhost:8080/swagger-ui.html
