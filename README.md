@@ -28,5 +28,7 @@ Serás evaluado en base los siguientes puntos:
 - Buenas prácticas de proyecto
 - La documentación del código
 
-##API-DOC
+## API-DOC
 http://localhost:8080/swagger-ui.html
+
+*Para los tests unitarios debería detenerse el docker
